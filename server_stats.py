@@ -81,7 +81,7 @@ def send_alert(cpu_usage, ram_usage, total_ram_gb):
         'Content-Type': 'application/json',
     }
 
-    color, cpu_emoji, ram_emoji = get_embed_color_and_emoji(cpu_usage, used_ram_gb, total_ram_gb)
+    color, cpu_emoji, ram_emoji = get_embed_color_and_emoji(cpu_usage, ram_usage, total_ram_gb)
 
     embed = {
         "embeds": [
